@@ -13,3 +13,4 @@ student2.exclude('low grades')
 
 console.log(student1); 
 console.log(student2);
+console.log(student1.getAverage())
