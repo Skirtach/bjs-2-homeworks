@@ -54,9 +54,10 @@ class DetectiveBook extends Book{
 }
 
 class Library {
-    books = [];
+    
     constructor(name) {
         this.name = name;
+        this.books = [];
     }
 
     addBook(book) {
@@ -75,13 +76,16 @@ class Library {
               else return null;  
     }
     giveBookByName(bookName) {
-    let bookIndex  = this.books.findIndex((item)=>(item.name===bookName))
+    let bookIndex  = this.books.findIndex((item)=>item.name===bookName)
         if (bookIndex !== -1) {
-            this.books.splice([bookIndex],[1]);
-            return this.books[bookIndex];
+           let Namebook = this.books[bookIndex];
+           this.books.splice(bookIndex,1);
+        return Namebook;
+         
         }
-            else return null;
+         else return null;
         }
-  }
+      }
+
   
 
