@@ -11,6 +11,8 @@ student2.addMark(3);
 student2.addMark(2);
 student2.exclude('low grades')
 
+
+
 console.log(student1); 
 console.log(student2);
 console.log(student1.getAverage())
